@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create By Sanjay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="prolist">
+        <ul>
+            
+        </ul>
+    </div>
+
+    <div class="formContainer">
+        <form class="myClass">
+            <h3>Students Data</h3>
+            <label for="name">First Name</label>
+            <input type="text" name="name" id="name">
+            <span id="usererror"></span>
+    
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+            <span id="emailerror"></span>
+    
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            <span id="passworderror"></span>
+    
+            <label for="conpassword">Confirm Password</label>
+            <input type="password" name="conpassword" id="conpassword">
+            <span id="conpassworderror"></span>
+            <button type="button" class="btn" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+    
+
+    <div class="listContainer">
+    <div id="list">
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>UserName</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Confirm Password</th>
+                </tr>
+            </thead>
+            <tbody id=dataBody>
+                
+            </tbody>
+        </table>
+    </div>
+</div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
